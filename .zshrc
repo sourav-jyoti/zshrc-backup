@@ -116,6 +116,7 @@ alias sat="sudo apt autoremove"
 alias d4="cd ../../../../"
 alias d3="cd ../../../"
 alias fzcode='code $(fzf -m --preview="batcat --color=always {}")'
+alias ts='normCap'
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
