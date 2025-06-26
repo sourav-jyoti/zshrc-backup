@@ -57,7 +57,6 @@ CASE_SENSITIVE="true"
 
 # Uncomment the following line if you want to change the command execution time
 # stamp shown in the history command output.
-# You can set one of the optional three formats:
 # "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
 # or set a custom format using the strftime function format specifications,
 # see 'man strftime' for details.
@@ -74,9 +73,6 @@ CASE_SENSITIVE="true"
 
 # Load all desired plugins in a single line
 plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
-
-# This line loads the plugins and settings
-source $ZSH/oh-my-zsh.sh
 
 
 
@@ -109,14 +105,18 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
 alias ht="history | grep"
+alias d4="cd ../../../../"
+alias d3="cd ../../../"
+alias spath='code $(fzf -m --preview="bat --color=always {}")'
+##alias ts='normCap'
+
+#for ubunutu/debian
 alias sad="sudo apt update"
 alias sag="sudo apt upgrade"
 alias sat="sudo apt autoremove"
-alias d4="cd ../../../../"
-alias d3="cd ../../../"
-alias fzcode='code $(fzf -m --preview="batcat --color=always {}")'
-alias ts='normCap'
+
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
@@ -126,3 +126,6 @@ export NVM_DIR="$HOME/.nvm"
 
 # Set up fzf key bindings and fuzzy completion
 source <(fzf --zsh)
+
+# This line loads the plugins and settings
+source $ZSH/oh-my-zsh.sh
