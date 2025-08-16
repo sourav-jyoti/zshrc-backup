@@ -18,7 +18,7 @@ ZSH_THEME="af-magic"
 # ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
 
 # Uncomment the following line to use case-sensitive completion.
-CASE_SENSITIVE="true"
+CASE_SENSITIVE="false"
 
 # Uncomment the following line to use hyphen-insensitive completion.
 # Case-sensitive completion must be off. _ and - will be interchangeable.
@@ -109,8 +109,13 @@ plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
 alias ht="history | grep"
 alias d4="cd ../../../../"
 alias d3="cd ../../../"
+alias d2="cd ../../"
 alias spath='code $(fzf -m --preview="bat --color=always {}")'
-##alias ts='normCap'
+alias cl="clear"
+
+
+#special
+alias nd="npm run dev"
 
 #for ubunutu/debian
 alias sad="sudo apt update"
