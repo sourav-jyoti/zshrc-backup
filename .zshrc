@@ -77,6 +77,7 @@ plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
 
 
 
+
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
